@@ -46,7 +46,7 @@ module SwitchUser
 
       def remember_current_user(remember)
         if remember
-          self.original_user = current_user
+          self.original_user = current_admin_user
         else
           clear_original_user
         end
